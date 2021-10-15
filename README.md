@@ -1,7 +1,7 @@
 # MTBLLS v1.20
 Multi-Tool Created in Python
-
-#Installation
+ 
+# Installation Debian
 
 ```
 sudo apt-get upgrade
@@ -15,5 +15,8 @@ pip install urllib
 pip install urllib3
 pip install sys
 pip install json
+git clone https://github.com/SkyWtkh/MTBLLS/
+cd MTBLLS
+python3 mtblls.py
 
 ```
