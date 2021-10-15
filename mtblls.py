@@ -38,6 +38,27 @@ def loading(a:str, b:list):
     num += 1
     time.sleep(1.3)
 
+def login():
+    account = {"username":"mtblls", "password":"root"}
+
+    print(Fore.RED+"""
+    ██╗      ██████╗  ██████╗ ██╗███╗   ██╗
+    ██║     ██╔═══██╗██╔════╝ ██║████╗  ██║ 
+    ██║     ██║   ██║██║  ███╗██║██╔██╗ ██║
+    ██║     ██║   ██║██║   ██║██║██║╚██╗██║
+    ███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║
+    ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝
+                                       
+    """)
+    username = input("Enter the Username: ")
+    password = input("Enter the Password: ")
+
+    if username == account["username"] and password == account["password"]:
+        print("Logging In")
+        time.sleep(4)
+        boot()
+    else:
+        print("Wrong username or Password")
 
 def logo():
     print(f'''
@@ -287,8 +308,6 @@ def choice():
                             os.system("..")
 
                         elif adv == '2' or adv == '02':
-                            os.chdir("lib")
-                            os.chdir("phishing")
                             os.chdir("AdvPhishing")
                             print("""
                             Select:
@@ -505,5 +524,4 @@ def boot():
     options()
     choice()
 
-if __name__ == '__main__':
-	boot()
+login()
