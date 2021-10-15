@@ -1,7 +1,9 @@
 # MTBLLS v1.20
 Multi-Tool Created in Python
 
-'''
+#Installation
+
+```
 sudo apt-get upgrade
 sudo apt-get update
 sudo apt-get install git
@@ -14,4 +16,4 @@ pip install urllib3
 pip install sys
 pip install json
 
-'''
+```
