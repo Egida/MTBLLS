@@ -147,7 +147,7 @@ def choice():
                     print("Command not recognized")
 
         elif options == '02' or options == '2':
-            os.system("cd lib")
+            os.chdir("lib")
             logo()
             print(f'''
                                                         \u001b[38;5;111m╔╦╗╔╦╗╔═╗╔═╗
@@ -248,15 +248,16 @@ def choice():
                         zphisher = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"Phishing-ZPhisher"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
 
                         if zphisher == '01' or zphisher == '1':
-                            os.system("cd lib/")
-                            os.system("cd phishing/")
+                            os.chdir("lib")
+                            os.chdir("phishing")
                             os.system("git clone https://github.com/htr-tech/zphisher/")
-                            os.system("cd ..")
-                            os.system("cd ..")
+                            os.chdir("..")
+                            os.chdir("..")
 
                         elif zphisher == '02' or zphisher == '2':
-                            os.system("cd lib/")
-                            os.system("cd phishing/zphisher/")
+                            os.chdir("lib")
+                            os.chdir("phishing")
+                            os.chdir("zphisher")
                             os.system("chmod +x *")
                             os.system("bash zphisher.sh")
 
@@ -279,15 +280,16 @@ def choice():
                         adv = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"Phishing-AdvPhishing"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
 
                         if adv == '1' or adv == '01':
-                            os.system("cd lib/")
-                            os.system("cd phishing/")
+                            os.chdir("lib")
+                            os.chdir("phishing")
                             os.system("git clone https://github.com/Ignitetch/AdvPhishing")
-                            os.system("cd ..")
-                            os.system("cd ..")
+                            os.chdir("..")
+                            os.system("..")
 
                         elif adv == '2' or adv == '02':
-                            os.system("cd lib/")
-                            os.system("cd phishing/AdvPhishing")
+                            os.chdir("lib")
+                            os.chdir("phishing")
+                            os.chdir("AdvPhishing")
                             print("""
                             Select:
 
@@ -341,16 +343,16 @@ def choice():
                         fb = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"Bruteforcing-Facebook"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
 
                         if fb == '01' or fb == '1':
-                            os.system("cd lib/")
-                            os.system("cd bruteforcing/")
+                            os.chdir("lib")
+                            os.chdir("bruteforcing")
                             os.system("git clone https://github.com/IAmBlackHacker/Facebook-BruteForce")
-                            os.system("cd ..")
-                            os.system("cd ..")
+                            os.chdir("..")
+                            os.chdir("..")
 
                         elif fb == '02' or fb == '2':
-                            os.system("cd lib/")
-                            os.system("cd bruteforcing/")
-                            os.system("cd Facebook-BruteForce/")
+                            os.chdir("lib")
+                            os.chdir("bruteforcing")
+                            os.chdir("Facebook-BruteForce")
                             os.system("python3 fb.py")
 
                         elif fb == '03' or fb == '3':
@@ -371,16 +373,16 @@ def choice():
                         ig = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"Bruteforcing-Instagram"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
 
                         if ig == '1' or ig == '01':
-                            os.system("cd lib/")
-                            os.system("cd bruteforcing/")
+                            os.chdir("lib")
+                            os.chdir("bruteforcing")
                             os.system("git clone https://github.com/GhosTmaNHarsh/instagram")
-                            os.system("cd ..")
-                            os.system("cd ..")
+                            os.chdir("..")
+                            os.chdir("..")
 
                         elif ig == '2' or ig == '02':
-                            os.system("cd lib/")
-                            os.system("cd bruteforcing/")
-                            os.system("cd instagram")
+                            os.chdir("lib")
+                            os.chdir("bruteforcing")
+                            os.chdir("instagram")
                             os.system("python hackinsta.py")
 
                         elif ig == '3' or ig == '03':
