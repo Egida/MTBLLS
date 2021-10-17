@@ -633,7 +633,7 @@ def choice():
                     except:
                         print("ERROR!")
 
-                elif sublister == '3' or sublister == '03':
+                elif sherlock == '3' or sherlock == '03':
 
         elif options == '12':
             os.system('cls' if os.name == 'nt' else 'clear')
