@@ -633,6 +633,8 @@ def choice():
                     except:
                         print("ERROR!")
 
+                elif sublister == '3' or sublister == '03':
+
         elif options == '12':
             os.system('cls' if os.name == 'nt' else 'clear')
             logo()
@@ -664,6 +666,9 @@ def choice():
                         os.system(websitecommand)
                     except:
                         print("ERROR!")
+
+                elif sublister == '3' or sublister == '03':
+                    boot()
 
         elif options == 'clear':
             os.system('cls' if os.name == 'nt' else 'clear')
