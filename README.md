@@ -1,6 +1,6 @@
 <div align="center">
   <h1>MTBLLS Ethical Hacking Tool ─ 1.25</h1>
- ```
+```
   Planned for v1.50:
   Fix Error in the execution of tools and directory selection
   Add more options in the metasploit section
@@ -11,7 +11,7 @@
   Changelog v1.25:
   Added: Sublist3r, Sherlock & SMS Spam
   UI was improved 
-  ```
+ ```
 
 
 </div><br>
