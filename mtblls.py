@@ -658,7 +658,7 @@ def choice():
 
                 elif sublister == '2' or sublister == '02':
                     website = input(Fore.RED+"website> ")
-                    websitecommand = "python3 $HOME/MTBLLS/lib/sublist3r/sublist3r/sublist3r.py -d "+website
+                    websitecommand = "python3 $HOME/MTBLLS/lib/sublist3r/Sublist3r/sublist3r.py -d "+website
 
                     try:
                         os.system(websitecommand)
