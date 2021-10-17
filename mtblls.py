@@ -39,6 +39,12 @@ def loading(a:str, b:list):
     num += 1
     time.sleep(1.3)
 
+def slowprint(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(4. / 100)
+
 
 
 def login():
@@ -60,13 +66,19 @@ def login():
     if username == account["username"] and password == account["password"]:
         print("Correct Password and Username! Wait 5 Seconds ...")
         time.sleep(4)
+        slowprint(" MTBLLS v1.25 | [##########################] ")
+        slowprint(" MTBLLS Modules | [##########################] ")
+        slowprint(" PineappleDev | [##########################] ")
+        slowprint(" ..................... ")
+        slowprint(" Welcome MTBLLS user ")
+        slowprint(" ..................... ")
         boot()
     else:
         print("Wrong username or Password")
         print("Exiting ...")
 
 def logo():
-    print(f'''\u001b[38;5;111m[\u001b[38;5;26mMTBLLS - [Multi-Tool] - v1.25 | Arch & Debian Version\u001b[38;5;111m]
+    slowprint(f'''\u001b[38;5;111m[\u001b[38;5;26mMTBLLS - [Multi-Tool] - v1.25 | Arch & Debian Version\u001b[38;5;111m]
                                             \u001b[38;5;111m  ╔╦╗╔╦╗╔╗ ╦  ╦  ╔═╗
                                             \u001b[38;5;159m  ║║║ ║ ╠╩╗║  ║  ╚═╗
                                             \u001b[38;5;195m  ╩ ╩ ╩ ╚═╝╩═╝╩═╝╚═╝ Multi-Tool\u001b[38;5;26m''')
