@@ -634,6 +634,7 @@ def choice():
                         print("ERROR!")
 
                 elif sherlock == '3' or sherlock == '03':
+                    boot()
 
         elif options == '12':
             os.system('cls' if os.name == 'nt' else 'clear')
