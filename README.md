@@ -20,7 +20,7 @@ v1.25: Added: Sublist3r, Sherlock & SMS Spam. UI was improved.
 v1.50: ???
 ```
   <h3>Installation (Debian)</h3>
-
+```
 sudo apt-get install git
 sudo apt-get install python3 python3-pip
 pip install colorama
@@ -33,4 +33,11 @@ pip install json
 git clone https://github.com/SkyWtkh/MTBLLS/
 cd MTBLLS
 python3 mtblls.py
+``` 
+  <h3>Password & Username</h3>
+  
+```
+Username: mtblls
+Password: root
+```
 
