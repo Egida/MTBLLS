@@ -1,6 +1,6 @@
 <div align="center">
   <h1>MTBLLS Ethical Hacking Tool ─ 1.50</h1>
-  PLEASE INSTALL MTBLLS IN $HOME
+  PLEASE INSTALL MTBLLS IN $HOME NOT IN ANOTHER DIRECTORY
   
 <h3>Planned v2.0</h3>
   
