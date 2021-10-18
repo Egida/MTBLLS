@@ -758,6 +758,9 @@ def choice():
                         os.system(wpscommand)
                     except:
                         print(Fore.RED+"ERROR!!!")
+                    
+                    if website == 'exit':
+                        boot()
 
                 elif wps == '2' or wps == '02':
                     boot()
