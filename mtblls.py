@@ -1,7 +1,7 @@
-# MTBLLS V1.25
+# MTBLLS V1.50
 # WINDOWS & GNU LINUX
 # ┌─────────────────────────┐
-# | MTBLLS V1.25            |
+# | MTBLLS V1.50            |
 # └─────────────────────────┘
 #
 # ┌───────────────────────────────────────────────────────────────────────┐
@@ -48,7 +48,7 @@ def slowprint(s):
 
 
 def login():
-    os.system('title MTBLLS [Multi-Tool] - v1.25 - github.com/SkyWtkh/MTBLLS' if os.name == 'nt' else 'clear')
+    os.system('title MTBLLS [Multi-Tool] - v1.50 - github.com/SkyWtkh/MTBLLS' if os.name == 'nt' else 'clear')
     account = {"username":"mtblls", "password":"root"}
 
     print(Fore.RED+"""
@@ -66,7 +66,7 @@ def login():
     if username == account["username"] and password == account["password"]:
         print("Correct Password and Username! Wait 5 Seconds ...")
         time.sleep(4)
-        slowprint(" MTBLLS v1.25 | [##########################] ")
+        slowprint(" MTBLLS v1.50 | [##########################################] ")
         slowprint(" MTBLLS Modules | [##########################] ")
         slowprint(" PineappleDev | [##########################] ")
         slowprint(" ..................... ")
@@ -77,21 +77,22 @@ def login():
         print("Wrong username or Password")
         print("Exiting ...")
 
-def logo():
-    slowprint(f'''\u001b[38;5;111m[\u001b[38;5;26mMTBLLS - [Multi-Tool] - v1.25 | Arch & Debian Version\u001b[38;5;111m]
+def logo():    
+    print(f'''\u001b[38;5;111m[\u001b[38;5;26mMTBLLS - [Multi-Tool] - v1.50 | Arch & Debian Version\u001b[38;5;111m]
                                             \u001b[38;5;111m  ╔╦╗╔╦╗╔╗ ╦  ╦  ╔═╗
                                             \u001b[38;5;159m  ║║║ ║ ╠╩╗║  ║  ╚═╗
                                             \u001b[38;5;195m  ╩ ╩ ╩ ╚═╝╩═╝╩═╝╚═╝ Multi-Tool\u001b[38;5;26m''')
 
 def options():
     print(f'''                        \u001b[38;5;111m╚╦═════════════════╦═══════════════════════╦════════════════════╦╝
-                        \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m1\u001b[38;5;111m]\033[0;35m DoS         \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m4\u001b[38;5;111m]\033[0;35m Wireshark     \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m7\u001b[38;5;111m]\033[0;35m Bruteforce \u001b[38;5;111m║  
-                        \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m2\u001b[38;5;111m]\033[0;35m DDoS        \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m5\u001b[38;5;111m]\033[0;35m Etherape      \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m8\u001b[38;5;111m]\033[0;35m Metasploit\u001b[38;5;111m ║  
-                        \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m3\u001b[38;5;111m]\033[0;35m IP-Info     \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m6\u001b[38;5;111m]\033[0;35m Phishing      \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m9\u001b[38;5;111m]\033[0;35m Nmap       \u001b[38;5;111m║
+                        \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m1\u001b[38;5;111m]\033[0;35m DoS         \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m2\u001b[38;5;111m]\033[0;35m Wireshark     \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m3\u001b[38;5;111m]\033[0;35m Bruteforce \u001b[38;5;111m║  
+                        \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m4\u001b[38;5;111m]\033[0;35m DDoS        \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m5\u001b[38;5;111m]\033[0;35m Etherape      \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m6\u001b[38;5;111m]\033[0;35m Metasploit\u001b[38;5;111m ║  
+                        \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m7\u001b[38;5;111m]\033[0;35m IP-Info     \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m6\u001b[38;8;111m]\033[0;35m Phishing      \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m9\u001b[38;5;111m]\033[0;35m Nmap       \u001b[38;5;111m║
                         \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m10\u001b[38;5;111m]\033[0;35m Spam SMS   \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m11\u001b[38;5;111m]\033[0;35m Sherlock     \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m12\u001b[38;5;111m]\033[0;35m Sublist3r \u001b[38;5;111m║
+                        \u001b[38;5;111m ║ \u001b[38;5;111m[\033[0;35m13\u001b[38;5;111m]\033[0;35m Sqlmap     \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m14\u001b[38;5;111m]\033[0;35m PineKiller   \u001b[38;5;111m║     \u001b[38;5;111m[\033[0;35m15\u001b[38;5;111m]\033[0;35m WPScan    \u001b[38;5;111m║
                         \u001b[38;5;111m╔╩═════════════════╩═══════════════════════╩════════════════════╩╗
                         \u001b[38;5;111m║    Type 'exit' to exit mtblls or 'clear' to clear console      ║
-                        \u001b[38;5;111m║    MTBLLS [Multi-Tool] | V1.25 | github.com/SkyWtkh/MTBLLS     ║
+                        \u001b[38;5;111m║    MTBLLS [Multi-Tool] | V1.50 | github.com/SkyWtkh/MTBLLS     ║
                         \u001b[38;5;111m╚════════════════════════════════════════════════════════════════╝''')
                         
     
@@ -191,9 +192,8 @@ def choice():
                 else:
                     print("Command not recognized")
 
-        elif options == '02' or options == '2':
+        elif options == '04' or options == '4':
             os.system('cls' if os.name == 'nt' else 'clear')
-            os.chdir("lib")
             logo()
             print(f'''
                                                 \u001b[38;5;111m╔╦╗╔╦╗╔═╗╔═╗
@@ -220,11 +220,15 @@ def choice():
                 elif DDoS == '3' or DDoS == '03':
                         turbo = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"DDoS-Turbo"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
                 elif DDoS == '4' or DDoS == '04':
-                    ddoscommand = "python3 ddos.py -s "+host+" -p"+port+" -t "+turbo
+                    ddoscommand = "python3 $HOME/MTBLLS/lib/ddos.py -s "+host+" -p"+port+" -t "+turbo
+                    try:
+                        os.system(ddoscommand)
+                    except:
+                        print(Fore.RED+"ERROR!!!")
                 elif DDoS == '5' or DDoS == '05':
                     boot()
 
-        elif options == '03' or options == '3':
+        elif options == '07' or options == '7':
             os.system('cls' if os.name == 'nt' else 'clear')
             logo()
             print(f'''
@@ -258,7 +262,7 @@ def choice():
                 elif ipinfo == 'exit':
                     boot()
 
-        elif options == '04' or options == '4':
+        elif options == '02' or options == '2':
             os.system("wireshark")
                     
 
@@ -303,11 +307,8 @@ def choice():
                             os.chdir("..")
 
                         elif zphisher == '02' or zphisher == '2':
-                            os.chdir("lib")
-                            os.chdir("phishing")
-                            os.chdir("zphisher")
-                            os.system("chmod +x *")
-                            os.system("bash zphisher.sh")
+                            os.system("chmod +x $HOME/MTBLLS/lib/phishing/zphisher/zphisher.sh")
+                            os.system("bash $HOME/MTBLLS/lib/phishing/zphisher/zphisher.sh")
 
                         elif zphisher == '03' or zphisher == '3':
                             boot()
@@ -335,7 +336,6 @@ def choice():
                             os.system("..")
 
                         elif adv == '2' or adv == '02':
-                            os.chdir("AdvPhishing")
                             print("""
                             Select:
 
@@ -344,14 +344,14 @@ def choice():
                             """)
                             select = input("> ")
                             if select == '1' or select == 'debian':
-                                os.system("chmod +x *")
-                                os.system("./Linux-Setup.sh")
-                                os.system("./AdvPhishinh.sh")
+                                os.system("chmod +x $HOME/MTBLLS/lib/phishing/AdvPhishing/ *")
+                                os.system("bash $HOME/MTBLLS/lib/phishing/AdvPhishing/Linux_Setup.sh")
+                                os.system("bash $HOME/MTBLLS/lib/phishing/AdvPhishing/AdvPhishing.sh")
 
                             elif select == '2' or select == 'termux':
-                                os.system("chmod +x *")
-                                os.system("./Android-Setup.sh")
-                                os.system("./AdvPhishinh.sh")
+                                os.system("chmod +x $HOME/MTBLLS/lib/phishing/AdvPhishing/ *")
+                                os.system("bash $HOME/MTBLLS/lib/phishing/AdvPhishing/Android_Setup.sh")
+                                os.system("bash $HOME/MTBLLS/lib/phishing/AdvPhishing/AdvPhishing.sh")
                         elif adv == '3' or adv == '03':
                             boot()
 
@@ -360,7 +360,7 @@ def choice():
                 elif phishing == '3' or phishing == '03':
                     boot()
 
-        elif options == '7' or options == '07':
+        elif options == '3' or options == '03':
             os.system('cls' if os.name == 'nt' else 'clear')
             logo()
             print(f'''
@@ -398,10 +398,7 @@ def choice():
                             os.chdir("..")
 
                         elif fb == '02' or fb == '2':
-                            os.chdir("lib")
-                            os.chdir("bruteforcing")
-                            os.chdir("Facebook-BruteForce")
-                            os.system("python3 fb.py")
+                            os.system("python3 $HOME/MTBLLS/lib/bruteforcing/Facebook-BruteForce/fb.py")
 
                         elif fb == '03' or fb == '3':
                             boot()
@@ -428,10 +425,7 @@ def choice():
                             os.chdir("..")
 
                         elif ig == '2' or ig == '02':
-                            os.chdir("lib")
-                            os.chdir("bruteforcing")
-                            os.chdir("instagram")
-                            os.system("python hackinsta.py")
+                            os.system("python $HOME/MTBLLS/lib/bruteforcing/instagram/hackinsta.py")
 
                         elif ig == '3' or ig == '03':
                             boot()
@@ -439,7 +433,7 @@ def choice():
                 elif brute == '03' or brute == '3':
                     boot()
 
-        elif options == '08' or options == '8':
+        elif options == '06' or options == '6':
             os.system('cls' if os.name == 'nt' else 'clear')
             logo()
             print(f'''
@@ -683,10 +677,96 @@ def choice():
                 elif sublister == '3' or sublister == '03':
                     boot()
 
+        elif options == '13':
+            os.system('cls' if os.name == 'nt' else 'clear')
+            logo()
+            print(f'''
+                                              \u001b[38;5;111m╔═╗╔═╗ ╦  ╔╦╗╔═╗╔═╗
+                                              \u001b[38;5;159m╚═╗║═╬╗║  ║║║╠═╣╠═╝
+                                              \u001b[38;5;195m╚═╝╚═╝╚╩═╝╩ ╩╩ ╩╩  \u001b[38;5;26m
+                                        \u001b[38;5;111m╔═════════════════════════════╗
+                                        \u001b[38;5;111m║ \u001b[38;5;111m[\033[0;35m1\u001b[38;5;111m]\033[0;35m Get DBS List            \u001b[38;5;111m║
+                                        \u001b[38;5;111m║ \u001b[38;5;111m[\033[0;35m2\u001b[38;5;111m]\033[0;35m Exit                    \u001b[38;5;111m║ 
+                                        \u001b[38;5;111m╚═════════════════════════════╝''')
+            while(True):
+                sqlmap = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"Sqlmap"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
+
+                if sqlmap == '1' or sqlmap == '01':
+                    print("type 'exit' to exit or input de website")
+                    dbslist = input("website> ")
+                    dbscommand = 'sqlmap -u "'+dbslist+'" --dbs'
+
+                    if dbslist == 'exit':
+                        boot()
+
+                    try:
+                        os.system(dbscommand)
+                    except:
+                        print(Fore.RED+"ERROR!!!")
+                elif sqlmap == '2' or sqlmap == '02':
+                    boot()
+
+        elif options == '14':
+            os.system('cls' if os.name == 'nt' else 'clear')
+            logo()
+            print(f'''
+                                    \u001b[38;5;111m╔═╗╦╔╗╔╔═╗╔═╗╔═╗╔═╗╦  ╔═╗╦╔═╦╦  ╦  ╔═╗╦═╗
+                                    \u001b[38;5;159m╠═╝║║║║║╣ ╠═╣╠═╝╠═╝║  ║╣ ╠╩╗║║  ║  ║╣ ╠╦╝
+                                    \u001b[38;5;195m╩  ╩╝╚╝╚═╝╩ ╩╩  ╩  ╩═╝╚═╝╩ ╩╩╩═╝╩═╝╚═╝╩╚═ by x04000\u001b[38;5;26m
+                                        \u001b[38;5;111m╔═════════════════════════════╗
+                                        \u001b[38;5;111m║ \u001b[38;5;111m[\033[0;35m1\u001b[38;5;111m]\033[0;35m Install                 \u001b[38;5;111m║
+                                        \u001b[38;5;111m║ \u001b[38;5;111m[\033[0;35m2\u001b[38;5;111m]\033[0;35m Execute                 \u001b[38;5;111m║
+                                        \u001b[38;5;111m║ \u001b[38;5;111m[\033[0;35m3\u001b[38;5;111m]\033[0;35m Exit                    \u001b[38;5;111m║ 
+                                        \u001b[38;5;111m╚═════════════════════════════╝''')
+
+            while(True):
+                pine = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"PineappleKiller"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
+
+                if pine == '1' or pine == '01':
+                    os.chdir("lib")
+                    os.chdir("pine")
+                    os.system("git clone https://github.com/x04000/PineappleKiller")
+                    os.chdir("..")
+                    os.chdir("..")
+
+                elif pine == '2' or pine == '02':
+                    os.system("python3 $HOME/MTBLLS/lib/pine/PineappleKiller/PineappleKiller.py")
+
+                elif pine == '3' or pine == '03':
+                    boot()
+
+        elif options == '15':
+            os.system('cls' if os.name == 'nt' else 'clear')
+            logo()
+            print(f'''
+                                              \u001b[38;5;111m╦ ╦╔═╗╔═╗╔═╗╔═╗╔╗╔
+                                              \u001b[38;5;159m║║║╠═╝╚═╗║  ╠═╣║║║
+                                              \u001b[38;5;195m╚╩╝╩  ╚═╝╚═╝╩ ╩╝╚╝ WordPress Security Scanner\u001b[38;5;26m
+                                        \u001b[38;5;111m╔═════════════════════════════╗
+                                        \u001b[38;5;111m║ \u001b[38;5;111m[\033[0;35m1\u001b[38;5;111m]\033[0;35m Scan Website            \u001b[38;5;111m║
+                                        \u001b[38;5;111m║ \u001b[38;5;111m[\033[0;35m2\u001b[38;5;111m]\033[0;35m Exit                    \u001b[38;5;111m║ 
+                                        \u001b[38;5;111m╚═════════════════════════════╝''')
+            while(True):
+                wps = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"WPScan"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
+
+                if wps == '1' or wps == '01':
+                    print("Type 'exit' to exit or type a website to scan")
+
+                    website = input("website>")
+                    wpscommand = 'wpscan --url '+website
+                    try:
+                        os.system(wpscommand)
+                    except:
+                        print(Fore.RED+"ERROR!!!")
+
+                elif wps == '2' or wps == '02':
+                    boot()
+
         elif options == 'clear':
             os.system('cls' if os.name == 'nt' else 'clear')
 
         elif options == 'exit':
+            input("Press [ENTER] to exit")
             sys.exit(69)
 
         elif options == 'menu':
