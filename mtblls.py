@@ -751,6 +751,7 @@ def choice():
 
                 if wps == '1' or wps == '01':
                     print("Type 'exit' to exit or type a website to scan")
+                    print("ERR_MTBLLS_WPSCAN: when you write exit you will go to wpscan please, press the CTRL + C keys once to return to mtblls")
 
                     website = input("website>")
                     wpscommand = 'wpscan --url '+website
