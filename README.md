@@ -27,6 +27,9 @@ v2.0: ??
 ```
 sudo apt-get install git
 sudo apt-get install python3 python3-pip
+sudo apt-get install nmap
+sudo apt-get install metasploit-framework
+sudo apt install wpscan
 pip install colorama
 pip install socket
 pip install urllib3
@@ -34,6 +37,10 @@ pip install urllib
 pip install requests
 pip install sys
 pip install json
+pip install sqlmap
+pip install etherape
+pip install tbomb
+ 
 git clone https://github.com/SkyWtkh/MTBLLS/
 cd MTBLLS
 python3 mtblls.py
