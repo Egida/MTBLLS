@@ -10,6 +10,7 @@ Add Phoneinfoga
 More NMAP Options
 Improve UI
 Add setup.sh for Debian, Arch, Termux & Alpine
+Improve login system
 ```
   
   <h3>Changelog</h3>
