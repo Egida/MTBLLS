@@ -212,7 +212,7 @@ def choice():
                 DDoS = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"DDoS"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
 
                 if DDoS == '1' or DDoS == '01':
-                    port = int(input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"DDoS-Port"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# "))
+                    port = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"DDoS-Port"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
                 
                 elif DDoS == '2' or DDoS == '02':
                     host = input(Fore.BLUE+"["+Fore.RED+"root"+Fore.GREEN+"@"+Fore.MAGENTA+"mtblls"+Fore.WHITE+"("+Fore.YELLOW+"DDoS-IP"+Fore.WHITE+")"+Fore.MAGENTA+" ~"+Fore.BLUE+"]# ")
